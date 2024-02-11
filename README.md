@@ -11,12 +11,15 @@ npm install react-native-android-signal-strength
 ## Usage
 
 ```js
-import { multiply } from 'react-native-android-signal-strength';
+import { getCurrentSignalStrength } from 'react-native-android-signal-strength';
 
 // ...
 
-const result = await multiply(3, 7);
+const result = await getCurrentSignalStrength();
 ```
+
+Expected result is between 0 to 4
+
 
 ## Contributing
 

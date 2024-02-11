@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-signal-strength",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "React native plugin to get native android cell signal strength.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
