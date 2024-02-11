@@ -17,6 +17,6 @@ const AndroidSignalStrength = NativeModules.AndroidSignalStrength
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return AndroidSignalStrength.multiply(a, b);
+export function getCurrentSignalStrength(): Promise<number> {
+  return AndroidSignalStrength.getCurrentSignalStrength();
 }
