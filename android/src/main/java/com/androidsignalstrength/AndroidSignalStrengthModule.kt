@@ -27,7 +27,7 @@ class AndroidSignalStrengthModule(private val reactContext: ReactApplicationCont
 
   private fun getCellSignalLevel(promise: Promise) {
     // API level 23 and above
-    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+    return if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
       promise.resolve(telephonyManager?.signalStrength?.level)
     } else {
       getCellSignalLevelLegacy(promise)
